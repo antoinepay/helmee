@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapQuestionViewController" customModule="Helmee" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsStackView" destination="Ig0-RG-BLJ" id="Pf1-yN-Pcd"/>
+                <outlet property="mapView" destination="KHO-Og-k1k" id="0CE-U8-mg3"/>
+                <outlet property="markerLogo" destination="si1-M8-5h3" id="6tw-7g-9AR"/>
+                <outlet property="slideRadius" destination="aFX-qV-F1U" id="Opl-FK-UKU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-Og-k1k">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="aFX-qV-F1U" appends="YES" id="4Ni-iZ-ARA"/>
+                    </connections>
+                </mapView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ig0-RG-BLJ">
+                    <rect key="frame" x="5" y="622" width="365" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jSY-Ob-6PN"/>
+                    </constraints>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="si1-M8-5h3">
+                    <rect key="frame" x="155" y="281.5" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="aV7-Pb-fFs"/>
+                        <constraint firstAttribute="width" secondItem="si1-M8-5h3" secondAttribute="height" multiplier="1:1" id="vpk-33-y6l"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ig0-RG-BLJ" secondAttribute="bottom" constant="5" id="CBa-pz-Ri7"/>
+                <constraint firstItem="KHO-Og-k1k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KYm-pC-e8K"/>
+                <constraint firstItem="si1-M8-5h3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qfn-jB-nCl"/>
+                <constraint firstItem="Ig0-RG-BLJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="Qfu-Wy-jSh"/>
+                <constraint firstAttribute="trailing" secondItem="KHO-Og-k1k" secondAttribute="trailing" id="aWf-LR-qMF"/>
+                <constraint firstAttribute="bottom" secondItem="KHO-Og-k1k" secondAttribute="bottom" id="jeR-O9-6ez"/>
+                <constraint firstItem="si1-M8-5h3" firstAttribute="centerY" secondItem="KHO-Og-k1k" secondAttribute="centerY" constant="-20" id="rZh-io-9jv"/>
+                <constraint firstAttribute="trailing" secondItem="Ig0-RG-BLJ" secondAttribute="trailing" constant="5" id="w9R-Kw-p3s"/>
+                <constraint firstItem="KHO-Og-k1k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xy3-y6-XyE"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="aFX-qV-F1U">
+            <connections>
+                <action selector="slideRadius:" destination="-1" id="ky2-2c-NGM"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>

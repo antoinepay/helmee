@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountDetailsCell" id="SyH-at-g7q" customClass="AccountDetailTableViewCell" customModule="Helmee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SyH-at-g7q" id="mvg-bo-pFD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anw-2m-134">
+                        <rect key="frame" x="10" y="0.0" width="150" height="44"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.0039215686269999999" green="0.30980392159999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-OV-iXg">
+                        <rect key="frame" x="160" y="0.0" width="195" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7I8-OV-iXg" secondAttribute="trailing" constant="20" id="3ka-PZ-qZW"/>
+                    <constraint firstAttribute="bottom" secondItem="anw-2m-134" secondAttribute="bottom" id="5ga-Bi-5mg"/>
+                    <constraint firstItem="7I8-OV-iXg" firstAttribute="top" secondItem="mvg-bo-pFD" secondAttribute="top" id="ENC-ki-fyk"/>
+                    <constraint firstItem="anw-2m-134" firstAttribute="top" secondItem="mvg-bo-pFD" secondAttribute="top" id="JMk-iw-52r"/>
+                    <constraint firstItem="anw-2m-134" firstAttribute="width" secondItem="mvg-bo-pFD" secondAttribute="width" multiplier="0.4" id="KdI-Yw-yUl"/>
+                    <constraint firstItem="anw-2m-134" firstAttribute="leading" secondItem="mvg-bo-pFD" secondAttribute="leading" constant="10" id="SxC-GC-N9b"/>
+                    <constraint firstAttribute="bottom" secondItem="7I8-OV-iXg" secondAttribute="bottom" id="XDn-7f-6ID"/>
+                    <constraint firstItem="7I8-OV-iXg" firstAttribute="leading" secondItem="anw-2m-134" secondAttribute="trailing" id="uSq-Nn-ldo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="7I8-OV-iXg" id="PQt-tP-DWx"/>
+                <outlet property="title" destination="anw-2m-134" id="KTX-Ah-TsV"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

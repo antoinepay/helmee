@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="Helmee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L1V-sG-ygm">
+                    <rect key="frame" x="85" y="10" width="204" height="204"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="L1V-sG-ygm" secondAttribute="height" multiplier="1:1" id="dW2-bV-2sf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L1V-sG-ygm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CNB-as-pST"/>
+                <constraint firstAttribute="bottom" secondItem="L1V-sG-ygm" secondAttribute="bottom" constant="10" id="EmF-7H-EXV"/>
+                <constraint firstItem="L1V-sG-ygm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hrf-Cm-yG2"/>
+                <constraint firstItem="L1V-sG-ygm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="oE5-sX-1Zw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logo" destination="L1V-sG-ygm" id="Mlb-We-e2K"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="-102"/>
+        </view>
+    </objects>
+</document>

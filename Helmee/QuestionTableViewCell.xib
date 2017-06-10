@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myQuestionCell" id="KGk-i7-Jjw" customClass="QuestionTableViewCell" customModule="Helmee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-fS-h5p">
+                        <rect key="frame" x="5" y="5" width="310" height="109.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zkr-Oh-ETG">
+                                <rect key="frame" x="278" y="77" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Xfi-i2-BCa"/>
+                                    <constraint firstAttribute="width" secondItem="Zkr-Oh-ETG" secondAttribute="height" multiplier="1:1" id="d3x-uR-9zm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evi-by-RB8">
+                                <rect key="frame" x="225" y="78" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dOp-r0-HnY">
+                                <rect key="frame" x="270" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dOp-r0-HnY" secondAttribute="height" multiplier="1:1" id="lAu-2f-UAI"/>
+                                    <constraint firstAttribute="width" constant="32" id="q34-Mz-bV8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eda-Tc-zIc">
+                                <rect key="frame" x="70" y="30.5" width="155" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txj-DY-62v" customClass="KDCircularProgress" customModule="KDCircularProgress">
+                                <rect key="frame" x="8" y="28" width="54" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="txj-DY-62v" secondAttribute="height" multiplier="1:1" id="U3j-v9-YN8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRv-mN-yIX">
+                                <rect key="frame" x="8" y="28" width="54" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI9-Kk-mqo">
+                                <rect key="frame" x="8" y="1" width="294" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.30980392159999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eda-Tc-zIc" firstAttribute="width" secondItem="8Wp-fS-h5p" secondAttribute="width" multiplier="0.5" id="0eO-XR-qxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Zkr-Oh-ETG" secondAttribute="trailing" constant="8" id="2bY-Kv-Vnp"/>
+                            <constraint firstItem="Zkr-Oh-ETG" firstAttribute="leading" secondItem="evi-by-RB8" secondAttribute="trailing" constant="4" id="4XP-Jd-fiT"/>
+                            <constraint firstAttribute="bottom" secondItem="eda-Tc-zIc" secondAttribute="bottom" constant="30" id="4fq-o4-X5K"/>
+                            <constraint firstItem="eda-Tc-zIc" firstAttribute="leading" secondItem="8Wp-fS-h5p" secondAttribute="leading" constant="70" id="6S1-q1-ngw"/>
+                            <constraint firstItem="eda-Tc-zIc" firstAttribute="top" secondItem="VI9-Kk-mqo" secondAttribute="bottom" constant="8.5" id="93f-cJ-Sug"/>
+                            <constraint firstItem="txj-DY-62v" firstAttribute="leading" secondItem="8Wp-fS-h5p" secondAttribute="leading" constant="8" id="C1L-OP-JH4"/>
+                            <constraint firstItem="PRv-mN-yIX" firstAttribute="centerY" secondItem="txj-DY-62v" secondAttribute="centerY" id="Czo-3W-02k"/>
+                            <constraint firstItem="PRv-mN-yIX" firstAttribute="width" secondItem="txj-DY-62v" secondAttribute="width" id="Dus-KX-zJh"/>
+                            <constraint firstItem="txj-DY-62v" firstAttribute="centerY" secondItem="8Wp-fS-h5p" secondAttribute="centerY" id="GQB-WL-a3v"/>
+                            <constraint firstItem="PRv-mN-yIX" firstAttribute="height" secondItem="txj-DY-62v" secondAttribute="height" id="M8y-Wi-0lN"/>
+                            <constraint firstItem="evi-by-RB8" firstAttribute="height" secondItem="Zkr-Oh-ETG" secondAttribute="height" id="Ru0-cc-ZQK"/>
+                            <constraint firstAttribute="trailing" secondItem="VI9-Kk-mqo" secondAttribute="trailing" constant="8" id="S3p-PC-tNN"/>
+                            <constraint firstAttribute="bottom" secondItem="evi-by-RB8" secondAttribute="bottom" constant="8" id="Tlu-DA-Hch"/>
+                            <constraint firstItem="eda-Tc-zIc" firstAttribute="centerY" secondItem="PRv-mN-yIX" secondAttribute="centerY" id="Ufa-ax-w8F"/>
+                            <constraint firstItem="eda-Tc-zIc" firstAttribute="leading" secondItem="txj-DY-62v" secondAttribute="trailing" constant="8" id="Z2K-S5-7bC"/>
+                            <constraint firstItem="VI9-Kk-mqo" firstAttribute="top" secondItem="8Wp-fS-h5p" secondAttribute="top" constant="1" id="ehO-ty-Y6N"/>
+                            <constraint firstItem="VI9-Kk-mqo" firstAttribute="leading" secondItem="8Wp-fS-h5p" secondAttribute="leading" constant="8" id="goV-0d-OdQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Zkr-Oh-ETG" secondAttribute="bottom" constant="8" id="m5o-Fi-w40"/>
+                            <constraint firstItem="PRv-mN-yIX" firstAttribute="centerX" secondItem="txj-DY-62v" secondAttribute="centerX" id="oYr-3r-aCk"/>
+                            <constraint firstAttribute="trailing" secondItem="dOp-r0-HnY" secondAttribute="trailing" constant="8" id="pA9-vt-U4g"/>
+                            <constraint firstItem="dOp-r0-HnY" firstAttribute="top" secondItem="8Wp-fS-h5p" secondAttribute="top" constant="8" id="qFx-CG-NWq"/>
+                            <constraint firstItem="evi-by-RB8" firstAttribute="leading" secondItem="eda-Tc-zIc" secondAttribute="trailing" id="yP4-YP-5JC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8Wp-fS-h5p" secondAttribute="bottom" constant="5" id="ewc-lQ-yGY"/>
+                    <constraint firstItem="8Wp-fS-h5p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kGU-qR-M7n"/>
+                    <constraint firstItem="8Wp-fS-h5p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lYs-JN-dCS"/>
+                    <constraint firstAttribute="trailing" secondItem="8Wp-fS-h5p" secondAttribute="trailing" constant="5" id="qRE-ld-lzM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="VI9-Kk-mqo" id="pFi-Cg-w35"/>
+                <outlet property="credits" destination="evi-by-RB8" id="dAI-2H-NoI"/>
+                <outlet property="creditsImage" destination="Zkr-Oh-ETG" id="pbz-zX-u54"/>
+                <outlet property="progressView" destination="txj-DY-62v" id="lUt-pE-dp7"/>
+                <outlet property="questionText" destination="eda-Tc-zIc" id="EhY-et-kLZ"/>
+                <outlet property="remainingTime" destination="PRv-mN-yIX" id="jZp-5N-UeV"/>
+                <outlet property="stateImage" destination="dOp-r0-HnY" id="oKg-IL-aM4"/>
+                <outlet property="viewQuestion" destination="8Wp-fS-h5p" id="eA5-I2-BxA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

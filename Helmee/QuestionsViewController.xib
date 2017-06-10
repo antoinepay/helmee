@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionsViewController" customModule="Helmee" customModuleProvider="target">
+            <connections>
+                <outlet property="placeholderButton" destination="i48-BS-4av" id="oUS-wt-TUY"/>
+                <outlet property="sectionSegment" destination="a6x-EB-eLD" id="Dg4-id-1n2"/>
+                <outlet property="tableView" destination="ZKB-O5-BtL" id="BND-MM-ouw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZKB-O5-BtL">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VX5-Nt-7BQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a6x-EB-eLD">
+                            <rect key="frame" x="20" y="10" width="335" height="29"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a6x-EB-eLD" firstAttribute="centerY" secondItem="VX5-Nt-7BQ" secondAttribute="centerY" id="Kti-Eh-Nff"/>
+                        <constraint firstAttribute="height" constant="48" id="YjE-E3-zgq"/>
+                        <constraint firstAttribute="trailing" secondItem="a6x-EB-eLD" secondAttribute="trailing" constant="20" id="pdG-7y-77t"/>
+                        <constraint firstItem="a6x-EB-eLD" firstAttribute="leading" secondItem="VX5-Nt-7BQ" secondAttribute="leading" constant="20" id="tii-qH-7lZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i48-BS-4av">
+                    <rect key="frame" x="20" y="48" width="335" height="619"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZKB-O5-BtL" secondAttribute="bottom" id="2FC-Td-mSk"/>
+                <constraint firstAttribute="trailing" secondItem="VX5-Nt-7BQ" secondAttribute="trailing" id="D2Q-Yz-qe9"/>
+                <constraint firstItem="i48-BS-4av" firstAttribute="top" secondItem="VX5-Nt-7BQ" secondAttribute="bottom" id="FKx-9B-iLe"/>
+                <constraint firstItem="VX5-Nt-7BQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MeR-HG-M0c"/>
+                <constraint firstItem="VX5-Nt-7BQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P46-S3-9JN"/>
+                <constraint firstAttribute="trailing" secondItem="i48-BS-4av" secondAttribute="trailing" constant="20" id="R5i-cl-sEA"/>
+                <constraint firstItem="ZKB-O5-BtL" firstAttribute="top" secondItem="VX5-Nt-7BQ" secondAttribute="bottom" id="bfR-CX-gvZ"/>
+                <constraint firstAttribute="trailing" secondItem="ZKB-O5-BtL" secondAttribute="trailing" id="duN-oz-07P"/>
+                <constraint firstItem="i48-BS-4av" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="jF0-Sh-Fx2"/>
+                <constraint firstItem="ZKB-O5-BtL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kRI-iU-t0b"/>
+                <constraint firstAttribute="bottom" secondItem="i48-BS-4av" secondAttribute="bottom" id="oGr-DP-pP1"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="82.5"/>
+        </view>
+    </objects>
+</document>
